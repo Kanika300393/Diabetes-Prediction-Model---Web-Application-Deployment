@@ -5,20 +5,14 @@ This repository contains code for building a Diabetes Prediction Machine Learnin
 ## Process Flow
 This project consists of the following key steps:
 
-### 1. Data Collection and Preprocessing
+| **Step**                             | **Description**                                                                                                                                                                      |
+|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Data Collection and Preprocessing** | - **Dataset**: PIMA Diabetes Dataset is used to predict the likelihood of diabetes based on various health parameters.<br> - **Data Cleaning**: Features (X) and target variable (Y) are separated, where `Outcome` indicates diabetes status (1: Diabetic, 0: Non-Diabetic).<br> - **Standardization**: Features are scaled to zero mean and unit variance to ensure uniform contribution to the model. |
+| **Model Building (Training the SVM Classifier)** | - **Training**: Support Vector Machine (SVM) classifier is trained on X_train and Y_train.<br> - **Model Evaluation**: Accuracy scores evaluate performance on training and testing datasets.<br> - **Saving the Model**: Pickle is used to save the trained model for future predictions without retraining.                                                  |
 
-**Dataset**: We use the PIMA Diabetes Dataset to predict the likelihood of a person being diabetic based on various health parameters.
-**Data Cleaning**: The data is explored and cleaned (if necessary), followed by separating the features (X) and target variable (Y), where Outcome indicates whether a person has diabetes (1) or not (0).
-**Standardization**: We apply standardization to scale the features to have zero mean and unit variance, ensuring that all features contribute equally to the model.
-
-### 2. Model Building (Training the SVM Classifier)
-Support Vector Machine (SVM) is chosen for model training. The model is trained on the training data (X_train, Y_train).
-
-**Model Evaluation**: After training, the model’s accuracy is evaluated on both the training and testing data using accuracy scores.
-
-**Saving the Model**: The trained model is saved using pickle for future use, ensuring we can load the model without retraining it each time.
 
 ### Data Visualisation
+
 
 ![Heat Map](https://github.com/user-attachments/assets/fa118b15-be22-4b66-b204-76a2c8a7142c)
 
